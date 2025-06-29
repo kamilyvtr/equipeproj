@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe+ | Gestão Estratégica de Pessoas</title>
+    <link rel="shortcut icon" href="companhia.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header com Menu Responsivo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="caracteristica.png" alt="Ícone da Equipe" class="logo-img">
+                <span>Equipe+</span>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <nav class="nav-desktop">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#treinamentos" class="nav-link">Treinamentos</a>
+                <a href="#parcerias" class="nav-link">Parcerias</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#avaliacoes" class="nav-link">Avaliações</a>
+                <a href="login.html" class="nav-link login-btn">
+                    <i class="fas fa-user-lock"></i>
+                    Área do Cliente
+                </a>
+            </nav>
+            
+            <!-- Menu Hambúrguer Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <nav class="nav-mobile" id="nav-mobile">
+            <a href="#inicio" class="nav-link-mobile">Início</a>
+            <a href="#servicos" class="nav-link-mobile">Serviços</a>
+            <a href="#treinamentos" class="nav-link-mobile">Treinamentos</a>
+            <a href="#parcerias" class="nav-link-mobile">Parcerias</a>
+            <a href="#faq" class="nav-link-mobile">FAQ</a>
+            <a href="#avaliacoes" class="nav-link-mobile">Avaliações</a>
+            <a href="login.html" class="nav-link-mobile">
+                <i class="fas fa-user-lock"></i>
+                Área do Cliente
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Soluções Estratégicas em Gestão de Pessoas</h1>
+                <p>Conectamos talentos, propósito e resultados com ferramentas modernas e foco em engajamento, retenção e cultura organizacional.</p>
+               
+                
+                <!-- Botões de Acesso aos Formulários -->
+                <div class="cta-buttons">
+                    <a href="jovem-aprendiz.html" class="btn btn-primary">
+                        <i class="fas fa-graduation-cap"></i>
+                        Programa Jovem Aprendiz
+                    </a>
+                    <a href="contratacao.html" class="btn btn-secondary">
+                        <i class="fas fa-handshake"></i>
+                        Contratar Nossos Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-cogs"></i>
+                Nossos Serviços
+            </h2>
+            <div class="cards-grid">
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Redução de Turnover</h3>
+                    <p>Analisamos causas e implementamos ações para manter talentos na empresa.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Menos Absenteísmo</h3>
+                    <p>Indicadores de presença aliados a estratégias de motivação e reconhecimento.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Engajamento Real</h3>
+                    <p>Plano de carreira, comunicação clara e clima organizacional saudável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treinamentos -->
+    <section id="treinamentos" class="treinamentos">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-chalkboard-teacher"></i>
+                Programas de <span class="destaque">Desenvolvimento</span> e <span class="destaque">Treinamento</span>
+            </h2>
+            <div class="treinamentos-grid">
+                <div class="treinamento-card">
+                    <img src="executivo-com-bracos-cruzados.jpg" alt="Mentoria para líderes">
+                    <div class="card-content">
+                        <h3>Mentoria para Líderes</h3>
+                        <p>Desenvolvemos <strong>líderes preparados</strong> para lidar com pessoas e resultados através de <em>mentorados personalizados</em>, baseados em suas necessidades reais.</p>
+                    </div>
+                </div>
+                <div class="treinamento-card">
+                    <img src="jovem-empresario-usando-telefone-celular-no-escritorio-e-olhando-para-camera.jpg" alt="Comunicação eficaz">
+                    <div class="card-content">
+                        <h3>Comunicação Eficaz</h3>
+                        <p>Treinamentos com foco em <strong>clareza, escuta ativa</strong> e <em>relacionamentos interpessoais</em> para construir um ambiente colaborativo e produtivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcerias -->
+    <section id="parcerias" class="parcerias">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-handshake"></i>
+                Parcerias <span class="destaque">Certificadas</span>
+            </h2>
+            <div class="parceiros-carousel">
+                <div class="parceiros-track">
+                    <img src="Logo para consultora de moda minimalista Branco e azul claro.png" alt="Parceiro 1">
+                    <img src="Logotipo empresa de programação sistemas e tecnologia.png" alt="Parceiro 2">
+                    <img src="Indústria mercado logotipo colorido fun.png" alt="Parceiro 3">
+                    <img src="Logotipo engenharia construtora minimalista bege azul.png" alt="Parceiro 4">
+                    <img src="WhatsApp Image 2025-05-12 at 08.12.01.jpeg" alt="Parceiro 5">
+                    <!-- Duplicar para efeito infinito -->
+                    <img src="Logo para consultora de moda minimalista Branco e azul claro.png" alt="Parceiro 1">
+                    <img src="Logotipo empresa de programação sistemas e tecnologia.png" alt="Parceiro 2">
+                    <img src="Indústria mercado logotipo colorido fun.png" alt="Parceiro 3">
+                    <img src="Logotipo engenharia construtora minimalista bege azul.png" alt="Parceiro 4">
+                    <img src="WhatsApp Image 2025-05-12 at 08.12.01.jpeg" alt="Parceiro 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-question-circle"></i>
+                Perguntas <span class="destaque">Frequentes</span>
+            </h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quais os benefícios do Programa Jovem Aprendiz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos integração com a equipe, formação profissional, desenvolvimento comportamental e oportunidades reais de crescimento. Nosso programa vai além da obrigação legal, criando uma experiência transformadora.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como as empresas se beneficiam?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Redução de custos, retenção de talentos, incentivos fiscais e uma cultura organizacional mais humana e inovadora. Além disso, você investe no futuro da sua empresa com profissionais já alinhados à sua cultura.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual o diferencial dos nossos treinamentos?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>São práticos, personalizados, com foco em resultados concretos e alinhamento com as metas estratégicas da sua organização. Utilizamos metodologias modernas e acompanhamento contínuo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como funciona o processo de consultoria?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Iniciamos com um diagnóstico completo da sua empresa, identificamos oportunidades de melhoria e criamos um plano personalizado. O acompanhamento é contínuo com relatórios e ajustes quando necessário.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual o tempo médio para ver resultados?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Os primeiros resultados aparecem entre 30 a 60 dias, mas transformações mais profundas na cultura organizacional podem levar de 3 a 6 meses. Tudo depende do tamanho da empresa e dos desafios identificados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section id="avaliacoes" class="avaliacoes">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-star"></i>
+                O que nossos clientes dizem
+            </h2>
+            <div class="avaliacoes-carousel">
+                <div class="avaliacoes-track">
+                    <div class="avaliacao-card">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="client-info">
+                                <h4>Maria Silva</h4>
+                                <span>Diretora de RH</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Equipe dedicada e soluções modernas. Reduzimos a rotatividade em 30% em apenas 4 meses!"</p>
+                    </div>
+                    
+                    <div class="avaliacao-card">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="client-info">
+                                <h4>João Santos</h4>
+                                <span>CEO</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>"O sistema de engajamento mudou o clima da equipe para melhor! Recomendo fortemente."</p>
+                    </div>
+                    
+                    <div class="avaliacao-card">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="client-info">
+                                <h4>Ana Costa</h4>
+                                <span>Gerente de Pessoas</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Soluções práticas e adaptáveis. Excelente apoio para jovens talentos em nossa empresa."</p>
+                    </div>
+                    
+                    <div class="avaliacao-card">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="client-info">
+                                <h4>Carlos Lima</h4>
+                                <span>Diretor Operacional</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>"Nos ajudaram a estruturar um plano de desenvolvimento interno que realmente funciona!"</p>
+                    </div>
+                    
+                    <div class="avaliacao-card">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="client-info">
+                                <h4>Fernanda Oliveira</h4>
+                                <span>Coordenadora de RH</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"A parceria com a Equipe+ trouxe inovação e clareza nos processos de RH."</p>
+                    </div>
+                    
+                    <!-- Duplicar para efeito infinito -->
+                    <div class="avaliacao-card">
+                        <div class="card-header">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="client-info">
+                                <h4>Maria Silva</h4>
+                                <span>Diretora de RH</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Equipe dedicada e soluções modernas. Reduzimos a rotatividade em 30% em apenas 4 meses!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="caracteristica.png" alt="Ícone da Equipe" class="logo-img">
+                    <span>Equipe+</span>
+                </div>
+                <p>Gestão Estratégica de Pessoas que Transforma Organizações</p>
+                <div class="footer-links">
+                    <a href="jovem-aprendiz.html">Jovem Aprendiz</a>
+                    <a href="contratacao.html">Contratação</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#avaliacoes">Avaliações</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="copyright">Equipe+ &copy; 2025 | Projeto Integrador - Gestão Estratégica de Pessoas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

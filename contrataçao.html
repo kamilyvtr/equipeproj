@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratação de Serviços | Equipe+</title>
+    <link rel="shortcut icon" href="companhia.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+       <img src="caracteristica.png" alt="Ícone da Equipe" class="logo-img">
+                <span>Equipe+</span>
+            </div>
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar ao Início
+                </a>
+            </nav>
+        </div>
+    </header>
+
+   
+    <section class="form-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    <i class="fas fa-handshake"></i>
+                    Contrate Nossos Serviços
+                </h1>
+                <p>Transforme sua gestão de pessoas com soluções estratégicas personalizadas. Entre em contato conosco e descubra como podemos ajudar sua empresa a alcançar resultados excepcionais.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Solicite uma Proposta</h2>
+                    <p>Preencha o formulário abaixo e nossa equipe entrará em contato em até 24 horas para apresentar a melhor solução para sua empresa.</p>
+                </div>
+
+                <form id="form-contratacao" class="modern-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome-empresa">
+                                <i class="fas fa-building"></i>
+                                Nome da Empresa
+                            </label>
+                            <input type="text" id="nome-empresa" name="nome-empresa" placeholder="Nome da sua empresa" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cnpj">
+                                <i class="fas fa-id-card"></i>
+                                CNPJ
+                            </label>
+                            <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome-contato">
+                                <i class="fas fa-user"></i>
+                                Nome do Responsável
+                            </label>
+                            <input type="text" id="nome-contato" name="nome-contato" placeholder="Seu nome completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cargo">
+                                <i class="fas fa-briefcase"></i>
+                                Cargo
+                            </label>
+                            <input type="text" id="cargo" name="cargo" placeholder="Seu cargo na empresa" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                E-mail Corporativo
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="seu@empresa.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">
+                                <i class="fas fa-phone"></i>
+                                Telefone
+                            </label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="funcionarios">
+                                <i class="fas fa-users"></i>
+                                Número de Funcionários
+                            </label>
+                            <select id="funcionarios" name="funcionarios" required>
+                                <option value="">Selecione o porte da empresa</option>
+                                <option value="1-10">1 a 10 funcionários</option>
+                                <option value="11-50">11 a 50 funcionários</option>
+                                <option value="51-100">51 a 100 funcionários</option>
+                                <option value="101-500">101 a 500 funcionários</option>
+                                <option value="500+">Mais de 500 funcionários</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="segmento">
+                                <i class="fas fa-industry"></i>
+                                Segmento de Atuação
+                            </label>
+                            <select id="segmento" name="segmento" required>
+                                <option value="">Selecione o segmento</option>
+                                <option value="tecnologia">Tecnologia</option>
+                                <option value="saude">Saúde</option>
+                                <option value="educacao">Educação</option>
+                                <option value="financeiro">Financeiro</option>
+                                <option value="varejo">Varejo</option>
+                                <option value="industria">Indústria</option>
+                                <option value="servicos">Serviços</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicos-interesse">
+                            <i class="fas fa-check-square"></i>
+                            Serviços de Interesse
+                        </label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="servicos[]" value="reducao-turnover">
+                                <span class="checkmark"></span>
+                                Redução de Turnover
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="servicos[]" value="engajamento">
+                                <span class="checkmark"></span>
+                                Programa de Engajamento
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="servicos[]" value="jovem-aprendiz">
+                                <span class="checkmark"></span>
+                                Programa Jovem Aprendiz
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="servicos[]" value="treinamentos">
+                                <span class="checkmark"></span>
+                                Treinamentos e Desenvolvimento
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="servicos[]" value="consultoria">
+                                <span class="checkmark"></span>
+                                Consultoria em RH
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="servicos[]" value="clima">
+                                <span class="checkmark"></span>
+                                Pesquisa de Clima Organizacional
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="desafios">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Principais Desafios da Empresa
+                        </label>
+                        <textarea id="desafios" name="desafios" placeholder="Descreva os principais desafios que sua empresa enfrenta na gestão de pessoas..." rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="objetivos">
+                            <i class="fas fa-target"></i>
+                            Objetivos e Expectativas
+                        </label>
+                        <textarea id="objetivos" name="objetivos" placeholder="Quais resultados espera alcançar com nossa parceria?" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="orcamento">
+                                <i class="fas fa-dollar-sign"></i>
+                                Orçamento Previsto
+                            </label>
+                            <select id="orcamento" name="orcamento">
+                                <option value="">Selecione a faixa de investimento</option>
+                                <option value="ate-5k">Até R$ 5.000</option>
+                                <option value="5k-15k">R$ 5.000 a R$ 15.000</option>
+                                <option value="15k-30k">R$ 15.000 a R$ 30.000</option>
+                                <option value="30k-50k">R$ 30.000 a R$ 50.000</option>
+                                <option value="50k+">Acima de R$ 50.000</option>
+                                <option value="a-definir">A definir</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="prazo">
+                                <i class="fas fa-calendar-alt"></i>
+                                Prazo para Início
+                            </label>
+                            <select id="prazo" name="prazo">
+                                <option value="">Quando gostaria de iniciar?</option>
+                                <option value="imediato">Imediatamente</option>
+                                <option value="30-dias">Em até 30 dias</option>
+                                <option value="60-dias">Em até 60 dias</option>
+                                <option value="90-dias">Em até 90 dias</option>
+                                <option value="a-definir">A definir</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Solicitar Proposta
+                        </button>
+                        <a href="index.html" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i>
+                            Voltar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Equipe+ &copy; 2025 | Contratação de Serviços</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

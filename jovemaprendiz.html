@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Jovem Aprendiz | Equipe+</title>
+    <link rel="shortcut icon" href="companhia.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="caracteristica.png" alt="Ícone da Equipe" class="logo-img">
+                <span>Equipe+</span>
+            </div>
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar ao Início
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="form-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    <i class="fas fa-graduation-cap"></i>
+                    Programa Jovem Aprendiz
+                </h1>
+                <p>Oportunidade para empresas que desejam investir no futuro. Oferecemos integração real ao time, mentorias e plano de desenvolvimento.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Cadastro de Participante</h2>
+                    <p>Temos oportunidades que combinam com seu perfil! Preencha seus dados e dê o primeiro passo para fazer parte de uma equipe que acredita no seu potencial.</p>
+                </div>
+
+                <form id="form-jovem-aprendiz" class="modern-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">
+                                <i class="fas fa-user"></i>
+                                Nome Completo
+                            </label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                            <span class="error-message" id="error-nome"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                E-mail
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            <span class="error-message" id="error-email"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="idade">
+                                <i class="fas fa-calendar-alt"></i>
+                                Idade
+                            </label>
+                            <input type="number" id="idade" name="idade" placeholder="Sua idade" min="14" max="24" required>
+                            <span class="error-message" id="error-idade"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cidade">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Cidade/Estado
+                            </label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Cidade - Estado" required>
+                            <span class="error-message" id="error-cidade"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="escolaridade">
+                                <i class="fas fa-graduation-cap"></i>
+                                Escolaridade
+                            </label>
+                            <select id="escolaridade" name="escolaridade" required>
+                                <option value="">Escolha seu nível de escolaridade</option>
+                                <option value="fundamental">Ensino Fundamental</option>
+                                <option value="medio">Ensino Médio</option>
+                                <option value="tecnico">Ensino Técnico</option>
+                            </select>
+                            <span class="error-message" id="error-escolaridade"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="area">
+                                <i class="fas fa-briefcase"></i>
+                                Área de Interesse
+                            </label>
+                            <select id="area" name="area" required>
+                                <option value="">Escolha a área que deseja atuar</option>
+                                <option value="rh">Recursos Humanos</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="financas">Finanças</option>
+                                <option value="tecnologia">Tecnologia da Informação</option>
+                                <option value="logistica">Logística</option>
+                                <option value="comercial">Comercial</option>
+                            </select>
+                            <span class="error-message" id="error-area"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">
+                            <i class="fas fa-comment-alt"></i>
+                            Conte um pouco sobre você
+                        </label>
+                        <textarea id="descricao" name="descricao" placeholder="Fale sobre suas experiências, objetivos e por que quer participar do programa..." rows="4"></textarea>
+                        <span class="error-message" id="error-descricao"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="anexo">
+                                <i class="fas fa-paperclip"></i>
+                                Anexar Currículo (opcional)
+                            </label>
+                            <input type="file" id="anexo" name="anexo" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg">
+                            <span class="error-message" id="error-anexo"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="data-entrevista">
+                                <i class="fas fa-clock"></i>
+                                Data/Hora para Entrevista (opcional)
+                            </label>
+                            <input type="datetime-local" id="data-entrevista" name="data-entrevista">
+                            <span class="error-message" id="error-data-entrevista"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Inscrição
+                        </button>
+                        <a href="index.html" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i>
+                            Voltar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<a href="login.html" class="nav-link login-btn">
+    <i class="fas fa-user-lock"></i>
+    Área do Cliente
+</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Equipe+ &copy; 2025 | Programa Jovem Aprendiz</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

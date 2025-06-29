@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Acompanhe sua Empresa | Equipe+</title>
+    <link rel="shortcut icon" href="companhia.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+    <!-- Header Dashboard -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="caracteristica.png" alt="Ícone da Equipe" class="logo-img">
+                    <span>Equipe+</span>
+                </div>
+                <div class="company-info">
+                    <span class="company-name">TechCorp Solutions</span>
+                    <span class="last-update">Última atualização: Hoje, 14:30</span>
+                </div>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <nav class="nav-desktop">
+                <a href="#overview" class="nav-link active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Overview
+                </a>
+                <a href="#engajamento" class="nav-link">
+                    <i class="fas fa-heart"></i>
+                    Engajamento
+                </a>
+                <a href="#turnover" class="nav-link">
+                    <i class="fas fa-exchange-alt"></i>
+                    Turnover
+                </a>
+                <a href="#produtividade" class="nav-link">
+                    <i class="fas fa-rocket"></i>
+                    Produtividade
+                </a>
+                <a href="#relatorios" class="nav-link">
+                    <i class="fas fa-chart-bar"></i>
+                    Relatórios
+                </a>
+            </nav>
+
+            <div class="header-right">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="user-menu">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">João Silva</span>
+                        <span class="user-role">Diretor de RH</span>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-menu">
+                            <a href="#"><i class="fas fa-user-cog"></i> Perfil</a>
+                            <a href="#"><i class="fas fa-cog"></i> Configurações</a>
+                            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Hambúrguer Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <nav class="nav-mobile" id="nav-mobile">
+            <a href="#overview" class="nav-link-mobile active">
+                <i class="fas fa-tachometer-alt"></i>
+                Overview
+            </a>
+            <a href="#engajamento" class="nav-link-mobile">
+                <i class="fas fa-heart"></i>
+                Engajamento
+            </a>
+            <a href="#turnover" class="nav-link-mobile">
+                <i class="fas fa-exchange-alt"></i>
+                Turnover
+            </a>
+            <a href="#produtividade" class="nav-link-mobile">
+                <i class="fas fa-rocket"></i>
+                Produtividade
+            </a>
+            <a href="#relatorios" class="nav-link-mobile">
+                <i class="fas fa-chart-bar"></i>
+                Relatórios
+            </a>
+            <div class="mobile-user">
+                <div class="user-info">
+                    <span class="user-name">João Silva</span>
+                    <span class="user-role">Diretor de RH</span>
+                </div>
+                <a href="login.html" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Sair
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard-main">
+        <!-- Hero Stats -->
+        <section class="hero-stats">
+            <div class="container">
+                <h1 class="dashboard-title">
+                    <i class="fas fa-chart-line"></i>
+                    Acompanhe sua Empresa
+                </h1>
+                <p class="dashboard-subtitle">Painel visual com os principais dados sobre o desempenho da sua empresa</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card primary">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Total de Colaboradores</h3>
+                            <div class="stat-value">247</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                +12 este mês
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card success">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Índice de Satisfação</h3>
+                            <div class="stat-value">8.7<span class="unit">/10</span></div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                +0.8 pontos
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card warning">
+                        <div class="stat-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Taxa de Turnover</h3>
+                            <div class="stat-value">4.2<span class="unit">%</span></div>
+                            <div class="stat-change negative">
+                                <i class="fas fa-arrow-down"></i>
+                                -2.1% vs anterior
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card info">
+                        <div class="stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Produtividade</h3>
+                            <div class="stat-value">94<span class="unit">%</span></div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                +7% este trimestre
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="dashboard-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Visão Geral
+                </h2>
+                
+                <div class="overview-grid">
+                    <!-- Gráfico Principal -->
+                    <div class="chart-container main-chart">
+                        <div class="chart-header">
+                            <h3>Evolução dos Indicadores</h3>
+                            <div class="chart-period">
+                                <button class="period-btn active">6M</button>
+                                <button class="period-btn">1A</button>
+                                <button class="period-btn">2A</button>
+                            </div>
+                        </div>
+                        <div class="chart">
+                            <div class="chart-bars">
+                                <div class="chart-bar" style="height: 60%" data-value="6.0">
+                                    <span class="bar-value">6.0</span>
+                                    <span class="bar-label">Jan</span>
+                                </div>
+                                <div class="chart-bar" style="height: 70%" data-value="7.0">
+                                    <span class="bar-value">7.0</span>
+                                    <span class="bar-label">Fev</span>
+                                </div>
+                                <div class="chart-bar" style="height: 75%" data-value="7.5">
+                                    <span class="bar-value">7.5</span>
+                                    <span class="bar-label">Mar</span>
+                                </div>
+                                <div class="chart-bar" style="height: 82%" data-value="8.2">
+                                    <span class="bar-value">8.2</span>
+                                    <span class="bar-label">Abr</span>
+                                </div>
+                                <div class="chart-bar" style="height: 88%" data-value="8.8">
+                                    <span class="bar-value">8.8</span>
+                                    <span class="bar-label">Mai</span>
+                                </div>
+                                <div class="chart-bar active" style="height: 94%" data-value="9.4">
+                                    <span class="bar-value">9.4</span>
+                                    <span class="bar-label">Jun</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Indicadores Rápidos -->
+                    <div class="quick-indicators">
+                        <h3>Indicadores Rápidos</h3>
+                        <div class="indicators-list">
+                            <div class="indicator-item">
+                                <div class="indicator-info">
+                                    <span class="indicator-name">Performance Geral</span>
+                                    <span class="indicator-score excellent">9.2</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 92%"></div>
+                                </div>
+                            </div>
+
+                            <div class="indicator-item">
+                                <div class="indicator-info">
+                                    <span class="indicator-name">Clima Organizacional</span>
+                                    <span class="indicator-score good">8.5</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="indicator-item">
+                                <div class="indicator-info">
+                                    <span class="indicator-name">Eficiência Operacional</span>
+                                    <span class="indicator-score excellent">9.0</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="indicator-item">
+                                <div class="indicator-info">
+                                    <span class="indicator-name">Retenção de Talentos</span>
+                                    <span class="indicator-score good">8.8</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engajamento Section -->
+        <section id="engajamento" class="dashboard-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-heart"></i>
+                    Engajamento dos Colaboradores
+                </h2>
+                
+                <div class="engagement-dashboard">
+                    <!-- Gráfico de Pizza -->
+                    <div class="pie-chart-container">
+                        <h3>Distribuição do Engajamento</h3>
+                        <div class="pie-chart">
+                            <div class="pie-slice engaged" style="--percentage: 87"></div>
+                            <div class="pie-slice neutral" style="--percentage: 10"></div>
+                            <div class="pie-slice disengaged" style="--percentage: 3"></div>
+                            <div class="pie-center">
+                                <span class="pie-total">87%</span>
+                                <span class="pie-label">Engajados</span>
+                            </div>
+                        </div>
+                        <div class="pie-legend">
+                            <div class="legend-item">
+                                <span class="legend-color engaged"></span>
+                                <span>Engajados (87%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color neutral"></span>
+                                <span>Neutros (10%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color disengaged"></span>
+                                <span>Desengajados (3%)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fatores de Engajamento -->
+                    <div class="engagement-factors">
+                        <h3>Principais Fatores de Engajamento</h3>
+                        <div class="factors-list">
+                            <div class="factor-item">
+                                <div class="factor-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="factor-info">
+                                    <span class="factor-name">Reconhecimento e Recompensas</span>
+                                    <div class="factor-bar">
+                                        <div class="factor-fill" style="width: 91%"></div>
+                                    </div>
+                                </div>
+                                <span class="factor-score">9.1</span>
+                            </div>
+
+                            <div class="factor-item">
+                                <div class="factor-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <div class="factor-info">
+                                    <span class="factor-name">Work-Life Balance</span>
+                                    <div class="factor-bar">
+                                        <div class="factor-fill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <span class="factor-score">8.8</span>
+                            </div>
+
+                            <div class="factor-item">
+                                <div class="factor-icon">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <div class="factor-info">
+                                    <span class="factor-name">Oportunidades de Crescimento</span>
+                                    <div class="factor-bar">
+                                        <div class="factor-fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <span class="factor-score">8.5</span>
+                            </div>
+
+                            <div class="factor-item">
+                                <div class="factor-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="factor-info">
+                                    <span class="factor-name">Relacionamento com Liderança</span>
+                                    <div class="factor-bar">
+                                        <div class="factor-fill" style="width: 83%"></div>
+                                    </div>
+                                </div>
+                                <span class="factor-score">8.3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Turnover Section -->
+        <section id="turnover" class="dashboard-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-exchange-alt"></i>
+                    Análise de Turnover
+                </h2>
+                
+                <div class="turnover-dashboard">
+                    <div class="turnover-overview">
+                        <div class="turnover-main">
+                            <div class="turnover-rate-card">
+                                <div class="rate-icon">
+                                    <i class="fas fa-percentage"></i>
+                                </div>
+                                <div class="rate-content">
+                                    <h3>Taxa de Turnover Atual</h3>
+                                    <div class="rate-value">4.2%</div>
+                                    <div class="rate-change positive">
+                                        <i class="fas fa-arrow-down"></i>
+                                        Redução de 45% vs ano anterior
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="departments-breakdown">
+                            <h3>Breakdown por Departamento</h3>
+                            <div class="departments-list">
+                                <div class="department-item">
+                                    <div class="dept-info">
+                                        <span class="dept-name">Tecnologia</span>
+                                        <span class="dept-count">45 funcionários</span>
+                                    </div>
+                                    <div class="dept-bar">
+                                        <div class="dept-fill low" style="width: 30%"></div>
+                                    </div>
+                                    <span class="dept-rate">3.0%</span>
+                                </div>
+
+                                <div class="department-item">
+                                    <div class="dept-info">
+                                        <span class="dept-name">Vendas</span>
+                                        <span class="dept-count">32 funcionários</span>
+                                    </div>
+                                    <div class="dept-bar">
+                                        <div class="dept-fill medium" style="width: 50%"></div>
+                                    </div>
+                                    <span class="dept-rate">5.0%</span>
+                                </div>
+
+                                <div class="department-item">
+                                    <div class="dept-info">
+                                        <span class="dept-name">Marketing</span>
+                                        <span class="dept-count">28 funcionários</span>
+                                    </div>
+                                    <div class="dept-bar">
+                                        <div class="dept-fill low" style="width: 25%"></div>
+                                    </div>
+                                    <span class="dept-rate">2.5%</span>
+                                </div>
+
+                                <div class="department-item">
+                                    <div class="dept-info">
+                                        <span class="dept-name">Recursos Humanos</span>
+                                        <span class="dept-count">15 funcionários</span>
+                                    </div>
+                                    <div class="dept-bar">
+                                        <div class="dept-fill low" style="width: 20%"></div>
+                                    </div>
+                                    <span class="dept-rate">2.0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Motivos de Saída -->
+                    <div class="exit-reasons">
+                        <h3>Principais Motivos de Saída</h3>
+                        <div class="reasons-grid">
+                            <div class="reason-card">
+                                <div class="reason-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="reason-content">
+                                    <h4>Melhor Proposta Salarial</h4>
+                                    <div class="reason-percentage">35%</div>
+                                    <div class="reason-bar">
+                                        <div class="reason-fill" style="width: 35%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reason-card">
+                                <div class="reason-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="reason-content">
+                                    <h4>Mudança de Cidade</h4>
+                                    <div class="reason-percentage">25%</div>
+                                    <div class="reason-bar">
+                                        <div class="reason-fill" style="width: 25%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reason-card">
+                                <div class="reason-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="reason-content">
+                                    <h4>Oportunidade de Crescimento</h4>
+                                    <div class="reason-percentage">20%</div>
+                                    <div class="reason-bar">
+                                        <div class="reason-fill" style="width: 20%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reason-card">
+                                <div class="reason-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="reason-content">
+                                    <h4>Questões Pessoais</h4>
+                                    <div class="reason-percentage">20%</div>
+                                    <div class="reason-bar">
+                                        <div class="reason-fill" style="width: 20%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtividade Section -->
+        <section id="produtividade" class="dashboard-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-rocket"></i>
+                    Produtividade e Performance
+                </h2>
+                
+                <div class="productivity-dashboard">
+                    <div class="productivity-metrics">
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Eficiência de Tarefas</h3>
+                                <div class="metric-value">94%</div>
+                                <div class="metric-trend positive">
+                                    <i class="fas fa-trending-up"></i>
+                                    +12% vs trimestre anterior
+                                </div>
+                            </div>
+                            <div class="metric-chart">
+                                <div class="mini-bars">
+                                    <div class="mini-bar" style="height: 60%"></div>
+                                    <div class="mini-bar" style="height: 70%"></div>
+                                    <div class="mini-bar" style="height: 85%"></div>
+                                    <div class="mini-bar" style="height: 94%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Pontualidade</h3>
+                                <div class="metric-value">96%</div>
+                                <div class="metric-trend positive">
+                                    <i class="fas fa-trending-up"></i>
+                                    +8% vs trimestre anterior
+                                </div>
+                            </div>
+                            <div class="metric-chart">
+                                <div class="mini-bars">
+                                    <div class="mini-bar" style="height: 75%"></div>
+                                    <div class="mini-bar" style="height: 82%"></div>
+                                    <div class="mini-bar" style="height: 88%"></div>
+                                    <div class="mini-bar" style="height: 96%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-target"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Metas Atingidas</h3>
+                                <div class="metric-value">89%</div>
+                                <div class="metric-trend positive">
+                                    <i class="fas fa-trending-up"></i>
+                                    +15% vs trimestre anterior
+                                </div>
+                            </div>
+                            <div class="metric-chart">
+                                <div class="mini-bars">
+                                    <div class="mini-bar" style="height: 65%"></div>
+                                    <div class="mini-bar" style="height: 74%"></div>
+                                    <div class="mini-bar" style="height: 81%"></div>
+                                    <div class="mini-bar" style="height: 89%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance por Equipe -->
+                    <div class="teams-performance">
+                        <h3>Performance por Equipe</h3>
+                        <div class="teams-list">
+                            <div class="team-item">
+                                <div class="team-info">
+                                    <div class="team-avatar excellent">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="team-details">
+                                        <span class="team-name">Equipe Alpha</span>
+                                        <span class="team-members">12 membros</span>
+                                    </div>
+                                </div>
+                                <div class="team-performance-bar">
+                                    <div class="performance-fill excellent" style="width: 95%"></div>
+                                </div>
+                                <span class="team-score">95%</span>
+                            </div>
+
+                            <div class="team-item">
+                                <div class="team-info">
+                                    <div class="team-avatar good">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="team-details">
+                                        <span class="team-name">Equipe Beta</span>
+                                        <span class="team-members">8 membros</span>
+                                    </div>
+                                </div>
+                                <div class="team-performance-bar">
+                                    <div class="performance-fill good" style="width: 88%"></div>
+                                </div>
+                                <span class="team-score">88%</span>
+                            </div>
+
+                            <div class="team-item">
+                                <div class="team-info">
+                                    <div class="team-avatar excellent">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <div class="team-details">
+                                        <span class="team-name">Equipe Gamma</span>
+                                        <span class="team-members">15 membros</span>
+                                    </div>
+                                </div>
+                                <div class="team-performance-bar">
+                                    <div class="performance-fill excellent" style="width: 92%"></div>
+                                </div>
+                                <span class="team-score">92%</span>
+                            </div>
+
+                            <div class="team-item">
+                                <div class="team-info">
+                                    <div class="team-avatar excellent">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <div class="team-details">
+                                        <span class="team-name">Equipe Delta</span>
+                                        <span class="team-members">10 membros</span>
+                                    </div>
+                                </div>
+                                <div class="team-performance-bar">
+                                    <div class="performance-fill excellent" style="width: 97%"></div>
+                                </div>
+                                <span class="team-score">97%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Relatórios Section -->
+        <section id="relatorios" class="dashboard-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-bar"></i>
+                    Relatórios e Insights
+                </h2>
+                
+                <div class="reports-dashboard">
+                    <div class="reports-grid">
+                        <div class="report-card">
+                            <div class="report-header">
+                                <div class="report-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="report-info">
+                                    <h3>Relatório Mensal</h3>
+                                    <span class="report-date">Junho 2025</span>
+                                </div>
+                            </div>
+                            <div class="report-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Páginas</span>
+                                    <span class="stat-value">24</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Insights</span>
+                                    <span class="stat-value">12</span>
+                                </div>
+                            </div>
+                            <button class="report-btn">
+                                <i class="fas fa-download"></i>
+                                Baixar PDF
+                            </button>
+                        </div>
+
+                        <div class="report-card">
+                            <div class="report-header">
+                                <div class="report-icon">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="report-info">
+                                    <h3>Análise de Engajamento</h3>
+                                    <span class="report-date">Trimestre Q2</span>
+                                </div>
+                            </div>
+                            <div class="report-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Respondentes</span>
+                                    <span class="stat-value">247</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Taxa</span>
+                                    <span class="stat-value">98%</span>
+                                </div>
+                            </div>
+                            <button class="report-btn">
+                                <i class="fas fa-eye"></i>
+                                Visualizar
+                            </button>
+                        </div>
+
+                        <div class="report-card">
+                            <div class="report-header">
+                                <div class="report-icon">
+                                    <i class="fas fa-users-cog"></i>
+                                </div>
+                                <div class="report-info">
+                                    <h3>Plano de Ação</h3>
+                                    <span class="report-date">Próximos 90 dias</span>
+                                </div>
+                            </div>
+                            <div class="report-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Ações</span>
+                                    <span class="stat-value">8</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Progresso</span>
+                                    <span class="stat-value">65%</span>
+                                </div>
+                            </div>
+                            <button class="report-btn">
+                                <i class="fas fa-tasks"></i>
+                                Acompanhar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Insights Recentes -->
+                    <div class="recent-insights">
+                        <h3>Insights Recentes</h3>
+                        <div class="insights-list">
+                            <div class="insight-item">
+                                <div class="insight-icon positive">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="insight-content">
+                                    <h4>Melhoria no Clima Organizacional</h4>
+                                    <p>O programa de reconhecimento implementado resultou em aumento de 15% na satisfação geral dos colaboradores.</p>
+                                    <span class="insight-date">Há 2 dias</span>
+                                </div>
+                            </div>
+
+                            <div class="insight-item">
+                                <div class="insight-icon warning">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="insight-content">
+                                    <h4>Atenção: Equipe de Vendas</h4>
+                                    <p>Detectado aumento na rotatividade da equipe de vendas. Recomendamos análise das condições de trabalho.</p>
+                                    <span class="insight-date">Há 5 dias</span>
+                                </div>
+                            </div>
+
+                            <div class="insight-item">
+                                <div class="insight-icon success">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="insight-content">
+                                    <h4>Meta de Produtividade Atingida</h4>
+                                    <p>Parabéns! A empresa superou a meta de produtividade em 4% neste trimestre.</p>
+                                    <span class="insight-date">Há 1 semana</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Dashboard -->
+    <footer class="dashboard-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Equipe+ | Dashboard Empresarial</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#" class="footer-link">Suporte</a>
+                    <a href="#" class="footer-link">Documentação</a>
+                    <a href="login.html" class="footer-link">Sair</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dashboard-script.js"></script>
+</body>
+</html>
